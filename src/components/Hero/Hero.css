@@ -1,0 +1,176 @@
+.hero {
+    display: flex;
+    justify-content: center;
+}
+/* blur */
+.blur {
+    background: rgba(253, 120, 43, 0.69);
+    border-radius: 50%;
+    filter: blur(150px);
+    position: absolute;
+    z-index: -9;
+}
+.hero-blur {
+    height: 30rem;
+    left: 0;
+    width: 22rem;
+}
+/* left-hero */
+.left-hero {
+    display: flex;
+    flex: 3;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1.5rem 2rem 2rem;
+}
+.the-best-ad {
+    display: flex;
+    align-items: center;
+    margin-top: 4rem;
+    background-color: #393d42;
+    padding: 20px 13px;
+    border-radius: 4rem;
+    color: #fff;
+    width: fit-content;
+    position: relative;
+}
+.the-best-ad span {
+    z-index: 2;
+}
+.the-best-ad div {
+    background-color: #f48916;
+    border-radius: 3rem;
+    height: 80%;
+    width: 5.4rem;
+    position: absolute;
+    right: 8px;
+    transition: all 1s ease;
+}
+.the-best-ad div.active {
+    right: calc(8px * 30);
+}
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    color: #fff;
+    font-size: 4.5rem;
+    font-weight: 700;
+}
+.hero-text > div:nth-of-type(3) {
+    font-size: 1rem;
+    font-weight: 200;
+    letter-spacing: 1px;
+    width: 80%;
+}
+.figures {
+    display: flex;
+    gap: 2rem;
+}
+.figures > div {
+    display: flex;
+    flex-direction: column;
+}
+.figures > div > span:nth-of-type(1) {
+    color: #fff;
+    font-size: 2rem;
+}
+.figures > div > span:nth-of-type(2) {
+    color: var(--gray);
+}
+.buttons {
+    display: flex;
+    gap: 1rem;
+}
+.btn {
+    padding: 10px 0px;
+    width: 8rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-weight: 700;
+}
+.btn:nth-of-type(1) {
+    background-color: #f48916;
+}
+.btn:nth-of-type(2) {
+    background-color: transparent;
+    border: 2px solid #f48916;
+}
+/* right-hero */
+.right-hero {
+    background-color: #f48916;
+    flex: 1 1;
+    position: relative;
+}
+
+.Heart-rate {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+    position: absolute;
+    top: 7rem;
+    right: 4rem;
+    background-color: var(--darkGrey);
+    padding: 1rem;
+    border-radius: 5px;
+}
+.Heart-rate img {
+    width: 2rem;
+}
+.right-hero > button {
+    position: absolute;
+    right: 3rem;
+    top: 2rem;
+    background-color: #fff !important;
+    color: #000;
+    padding: 12px 0 !important;
+    width: 5.24rem;
+}
+.Heart-rate > span:nth-of-type(1) {
+    color: var(--gray);
+}
+.Heart-rate > span:nth-of-type(2) {
+    font-size: 1.5rem;
+    color: #fff;
+}
+.right-hero > img:nth-of-type(1) {
+    top: 10rem;
+    right: 8rem;
+    width: 23rem;
+    position: absolute;
+}
+.right-hero > img:nth-of-type(2) {
+    top: 4rem;
+    right: 20rem;
+    width: 15rem;
+    position: absolute;
+    z-index: -1;
+}
+.Calories-burned {
+    display: flex;
+    gap: 2rem;
+    padding: 1rem;
+    background-color: var(--caloryCard);
+    border-radius: 5px;
+    width: fit-content;
+    position: absolute;
+    top: 32rem;
+    right: 28rem;
+}
+.Calories-burned > img {
+    width: 3rem;
+}
+.Calories-burned > div {
+    display: flex;
+    flex-direction: column;
+}
+.Calories-burned > div span:nth-of-type(1) {
+    color: var(--gray);
+}
+.Calories-burned > div > span:nth-of-type(2) {
+    color: #fff;
+    font-size: 1.5rem;
+}

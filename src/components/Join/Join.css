@@ -1,0 +1,47 @@
+.join-now {
+    display: flex;
+    gap: 10rem;
+    padding: 0 2rem;
+}
+hr {
+    border: 2px solid var(--orange);
+    border-radius: 20%;
+    margin: -10px 0;
+    position: absolute;
+    width: 10.5rem;
+}
+.left-j {
+    display: flex;
+    flex-direction: column;
+}
+.left-j > div {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.right-j {
+    display: flex;
+    align-items: flex-end;
+}
+.email-container {
+    padding: 1rem 2rem;
+    display: flex;
+    gap: 3rem;
+    background-color: #808080;
+}
+.email-container input {
+    padding: 1px 2px;
+    background-color: transparent;
+    color: var(--lightgray);
+    border: none;
+    outline: none;
+}
+.email-container input::placeholder {
+    color: var(--lightgray);
+}
+.btn-j {
+    font-weight: 700;
+    padding: 12px 0;
+    width: 5.15rem;
+}

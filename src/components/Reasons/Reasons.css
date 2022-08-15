@@ -1,0 +1,71 @@
+.Reasons {
+    display: flex;
+    gap: 2rem;
+    padding: 0 2rem;
+}
+.reasons-left {
+    display: grid;
+    gap: 1rem;
+    flex: 1;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
+}
+.reasons-left > img {
+    object-fit: cover;
+}
+.reasons-left > img:nth-of-type(1) {
+    grid-row: 1/3;
+    height: 28rem;
+    width: 12rem;
+}
+.reasons-left > img:nth-of-type(2) {
+    grid-column: 2/4;
+    height: 16rem;
+    width: 25rem;
+}
+.reasons-left > img:nth-of-type(3) {
+    grid-column: 2/3;
+    height: 11rem;
+    width: 14rem;
+}
+.reasons-left > img:nth-of-type(4) {
+    grid-column: 3/4;
+    height: 11rem;
+    width: 10rem;
+}
+.reasons-right {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 1rem;
+}
+.reasons-right > span:nth-of-type(1) {
+    color: var(--orange);
+    font-weight: 700;
+}
+.why {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+}
+.reasons {
+    display: flex;
+    gap: 1rem;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+}
+.reasons img {
+    width: 2rem;
+}
+.partners-title {
+    color: var(--gray);
+    font-weight: normal;
+}
+.partners {
+    display: flex;
+    gap: 1rem;
+}
+.partners > img {
+    width: 2.5rem;
+}

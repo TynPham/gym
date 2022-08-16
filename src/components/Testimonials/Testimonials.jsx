@@ -3,8 +3,13 @@ import "./Testimonials.css";
 import leftArrows from "../../assets/leftArrow.png";
 import rightArrows from "../../assets/rightArrow.png";
 import { testimonialsData } from "../../data/testimonialsData";
+import { motion } from "framer-motion";
 
 function Testimonials(props) {
+    const transitions = {
+        type: "spring",
+        duration: 3,
+    };
     const [index, setIndex] = useState(0);
     const handlePrev = () => {
         if (index === 0) {
@@ -26,7 +31,20 @@ function Testimonials(props) {
                 <span>Testimonials</span>
                 <span className="stroke-text">WHAT THEY</span>
                 <span>SAY ABOUT US</span>
-                <span>{testimonialsData[index].review}</span>
+                <motion.span
+                    key={index}
+                    initial={{
+                        opacity: 0,
+                        x: -100,
+                    }}
+                    animate={{
+                        opacity: 1,
+                        x: 0,
+                    }}
+                    transition={{ ...transitions, duration: 1 }}
+                >
+                    {testimonialsData[index].review}
+                </motion.span>
                 <span>
                     <span style={{ color: "var(--orange)" }}>
                         {testimonialsData[index].name}{" "}
@@ -35,9 +53,42 @@ function Testimonials(props) {
                 </span>
             </div>
             <div className="right-t">
-                <div></div>
-                <div></div>
-                <img src={testimonialsData[index].image} alt="image" />
+                <motion.div
+                    initial={{
+                        opacity: 0,
+                        x: -100,
+                    }}
+                    whileInView={{
+                        opacity: 1,
+                        x: 0,
+                    }}
+                    transition={transitions}
+                ></motion.div>
+                <motion.div
+                    initial={{
+                        opacity: 0,
+                        x: 100,
+                    }}
+                    whileInView={{
+                        opacity: 1,
+                        x: 10,
+                    }}
+                    transition={transitions}
+                ></motion.div>
+                <motion.img
+                    key={index}
+                    initial={{
+                        opacity: 0,
+                        x: 100,
+                    }}
+                    animate={{
+                        opacity: 1,
+                        x: 0,
+                    }}
+                    transition={{ ...transitions, duration: 1 }}
+                    src={testimonialsData[index].image}
+                    alt="image"
+                />
                 <div className="arrows">
                     <img src={leftArrows} alt="prev" onClick={handlePrev} />
                     <img src={rightArrows} alt="next" onClick={handleNext} />

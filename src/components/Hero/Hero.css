@@ -43,11 +43,7 @@
     height: 80%;
     width: 5.4rem;
     position: absolute;
-    right: 8px;
     transition: all 1s ease;
-}
-.the-best-ad div.active {
-    right: calc(8px * 30);
 }
 .hero-text {
     display: flex;
@@ -116,6 +112,7 @@
     background-color: var(--darkGrey);
     padding: 1rem;
     border-radius: 5px;
+    width: fit-content;
 }
 .Heart-rate img {
     width: 2rem;

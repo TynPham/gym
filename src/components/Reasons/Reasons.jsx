@@ -13,10 +13,10 @@ function Reasons(props) {
     return (
         <div className="Reasons">
             <div className="reasons-left">
-                <img src={image1} alt="image" />
-                <img src={image2} alt="image" />
-                <img src={image3} alt="image" />
-                <img src={image4} alt="image" />
+                <img src={image1} alt="1" />
+                <img src={image2} alt="2" />
+                <img src={image3} alt="3" />
+                <img src={image4} alt="4" />
             </div>
             <div className="reasons-right">
                 <span>SOME REASONS</span>
